@@ -31,10 +31,10 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class                instance  title           tags mask  isfloating  isterminal  noswallow  monitor */
-	{ "libreoffice",		NULL,     NULL,           1 << 1,    0,          0,          -1,        -1 },
-	{ "firefox",   			NULL,     NULL,           1 << 2,    0,          0,          -1,        -1 },
-	{ "chromium",  			NULL,     NULL,           1 << 2,    0,          0,          -1,        -1 },
-	{ "brave",		   		NULL,     NULL,           1 << 2,    0,          0,          -1,        -1 },
+	{ "libreoffice",		NULL,     NULL,           1 << 3,    0,          0,          -1,        -1 },
+	{ "firefox",   			NULL,     NULL,           1 << 1,    0,          0,          -1,        -1 },
+	{ "chromium",  			NULL,     NULL,           1 << 1,    0,          0,          -1,        -1 },
+	{ "brave",		   		NULL,     NULL,           1 << 1,    0,          0,          -1,        -1 },
 	{ "St",                 NULL,     NULL,           0,         0,          1,           0,        -1 },
 	{ NULL,                 NULL,     "Event Tester", 0,         0,          0,           1,        -1 }, /* xev */
 };
@@ -74,7 +74,7 @@ static Key keys[] = {
         { MODKEY,                       XK_b,      togglebar,      {0} },
         { MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
         { MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
-        { MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
+        { MODKEY|ShiftMask,             XK_i,      incnmaster,     {.i = +1 } },
         { MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
         { MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
         { MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
