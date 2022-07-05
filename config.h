@@ -11,10 +11,10 @@ static const char *fonts[]          = { "Roboto Mono:size=9", "JoyPixels:pixelsi
 static const char dmenufont[]       = "Roboto Mono:size=10";
 static char normbgcolor[]           = "#222222";
 static char normbordercolor[]       = "#0f0000";
-static char normfgcolor[]           = "#bbbbbb";
+static char normfgcolor[]           = "#edebeb";
 static char selfgcolor[]            = "#eeeeee";
-static char selbordercolor[]        = "#99541f";
-static char selbgcolor[]            = "#b33d00";
+static char selbordercolor[]        = "#f23a07";
+static char selbgcolor[]            = "#db3507";
 static char *colors[][3] = {
        /*               fg           bg           border   */
        [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
