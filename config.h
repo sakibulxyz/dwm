@@ -7,7 +7,10 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static const int swallowfloating    = 0;        /* 1 means swallow floating windows by default */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Roboto Mono:size=9", "JoyPixels:pixelsize=9:antialias=true:autohint:true" };
+static const char *fonts[]          = {
+	"Roboto Mono:size=9:antialias=true:autohint=true",
+	"NotoColorEmoji:pixelsize=9:antialias=true:autohint=true",
+};
 static const char dmenufont[]       = "Roboto Mono:size=10";
 static char normbgcolor[]           = "#222222";
 static char normbordercolor[]       = "#0f0000";
@@ -34,7 +37,7 @@ static const Rule rules[] = {
 	{ "libreoffice",		NULL,     NULL,           1 << 3,    0,          0,          -1,        -1 },
 	{ "firefox",   			NULL,     NULL,           1 << 1,    0,          0,          -1,        -1 },
 	{ "chromium",  			NULL,     NULL,           1 << 1,    0,          0,          -1,        -1 },
-	{ "brave",		   		NULL,     NULL,           1 << 1,    0,          0,          -1,        -1 },
+	{ "qbittorrent",   		NULL,     NULL,           1 << 5,    0,          0,          -1,        -1 },
 	{ "St",                 NULL,     NULL,           0,         0,          1,           0,        -1 },
 	{ NULL,                 NULL,     "Event Tester", 0,         0,          0,           1,        -1 }, /* xev */
 };
