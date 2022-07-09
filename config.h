@@ -34,7 +34,7 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class                instance  title           tags mask  isfloating  isterminal  noswallow  monitor */
-	{ "libreoffice",		NULL,     NULL,           1 << 3,    0,          0,          -1,        -1 },
+	{ "libreoffice",		NULL,     NULL,           1 << 2,    0,          0,          -1,        -1 },
 	{ "firefox",   			NULL,     NULL,           1 << 1,    0,          0,          -1,        -1 },
 	{ "chromium",  			NULL,     NULL,           1 << 1,    0,          0,          -1,        -1 },
 	{ "qbittorrent",   		NULL,     NULL,           1 << 5,    0,          0,          -1,        -1 },
